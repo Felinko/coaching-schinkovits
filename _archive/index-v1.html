@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Coaching Schinkovits — Business Coaching & Training | Dipl.-Ing. Günter Schinkovits</title>
+<meta name="description" content="Business Coaching und Training mit Dipl.-Ing. Günter Schinkovits in Siegendorf, Burgenland. Coaching für Führungskräfte und Mitarbeiter:innen — lösungsorientiert, vertraulich, persönlich. Auch Online- und Outdoorcoaching." />
+<meta name="author" content="Dipl.-Ing. Günter Schinkovits" />
+<meta property="og:title" content="Coaching Schinkovits — Business Coaching & Training" />
+<meta property="og:description" content="Suchen Sie sich aus, wer Sie coachen darf. Lösungsorientiertes Business Coaching in Siegendorf, Burgenland." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="de_AT" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%236C5B7B'/%3E%3Cpath d='M16 6c-1.4 3.2-4.8 4.2-4.8 8.2 0 2.7 2.1 4.6 4.8 4.6s4.8-1.9 4.8-4.6C20.8 10.2 17.4 9.2 16 6z' fill='%23fff'/%3E%3Crect x='15.2' y='18' width='1.6' height='8' rx='.8' fill='%23fff'/%3E%3C/svg%3E" />
+
+<style>
+  :root{
+    --bg:#F8F6F2;
+    --bg-alt:#F1ECE4;
+    --dark:#242029;
+    --ink:#26242B;
+    --muted:#6E6A72;
+    --line:#E4DED4;
+    --accent:#6C5B7B;
+    --accent-dark:#50435E;
+    --accent-soft:#EDE7F0;
+    --radius:16px;
+    --maxw:1140px;
+    --ease:cubic-bezier(.22,.61,.36,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.75;
+    font-weight:400;
+    font-size:17px;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4,.serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.12;letter-spacing:.2px}
+  h2{font-size:clamp(2rem,4.2vw,3.1rem);color:var(--ink)}
+  h3{font-size:1.5rem;font-weight:600}
+  p{margin:0 0 1.1em}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  .accent{color:var(--accent)}
+
+  /* ---------- Eyebrow ---------- */
+  .eyebrow{
+    display:inline-block;font-family:'Inter';font-size:.72rem;font-weight:600;
+    letter-spacing:.22em;text-transform:uppercase;color:var(--accent);
+    margin-bottom:1.1rem;
+  }
+  .eyebrow::before{content:"";display:inline-block;width:26px;height:1px;background:var(--accent);vertical-align:middle;margin-right:12px;opacity:.6}
+
+  /* ---------- Header ---------- */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    padding:20px 0;transition:padding .35s var(--ease),background .35s var(--ease),box-shadow .35s var(--ease);
+  }
+  header.scrolled{padding:12px 0;background:rgba(248,246,242,.86);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(0,0,0,.05)}
+  .nav{display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:11px;font-family:'Cormorant Garamond';font-size:1.42rem;font-weight:600;letter-spacing:.3px;color:var(--ink)}
+  .brand .mark{width:34px;height:34px;flex:none;border-radius:9px;background:var(--accent);display:grid;place-items:center}
+  .brand .mark svg{width:20px;height:20px}
+  .brand small{display:block;font-family:'Inter';font-size:.6rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:-3px}
+  .menu{display:flex;align-items:center;gap:30px}
+  .menu a{font-size:.86rem;font-weight:500;color:var(--ink);opacity:.82;position:relative;transition:opacity .2s}
+  .menu a::after{content:"";position:absolute;left:0;bottom:-5px;width:0;height:1.5px;background:var(--accent);transition:width .3s var(--ease)}
+  .menu a:hover{opacity:1}
+  .menu a:hover::after{width:100%}
+  .menu .btn{padding:10px 20px;border-radius:100px;background:var(--accent);color:#fff;opacity:1;font-weight:500}
+  .menu .btn::after{display:none}
+  .menu .btn:hover{background:var(--accent-dark)}
+  .burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
+  .burger span{width:24px;height:2px;background:var(--ink);border-radius:2px;transition:.3s var(--ease)}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;padding:190px 0 110px;overflow:hidden}
+  .hero::before{content:"";position:absolute;top:-15%;right:-8%;width:60vw;height:60vw;max-width:760px;max-height:760px;
+    background:radial-gradient(circle at 50% 50%,rgba(108,91,123,.13),rgba(108,91,123,0) 68%);z-index:0}
+  .hero .wrap{position:relative;z-index:1}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+  .hero-quote{font-family:'Cormorant Garamond';font-style:italic;font-size:1.25rem;color:var(--accent);margin-bottom:1.5rem}
+  .hero h1{font-size:clamp(2.7rem,6vw,4.6rem);letter-spacing:-.5px;margin-bottom:1.4rem}
+  .hero h1 em{font-style:italic;color:var(--accent)}
+  .hero p.lead{font-size:1.13rem;color:var(--muted);max-width:34ch;margin-bottom:2.2rem}
+  .hero-actions{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+  .cta{display:inline-flex;align-items:center;gap:9px;padding:15px 30px;border-radius:100px;font-weight:500;font-size:.95rem;transition:.28s var(--ease)}
+  .cta-primary{background:var(--accent);color:#fff;box-shadow:0 10px 26px -10px rgba(108,91,123,.6)}
+  .cta-primary:hover{background:var(--accent-dark);transform:translateY(-2px)}
+  .cta-ghost{color:var(--ink);border:1px solid var(--line)}
+  .cta-ghost:hover{border-color:var(--accent);color:var(--accent)}
+
+  .portrait{position:relative;justify-self:center}
+  .portrait .frame{width:min(300px,74vw);border-radius:200px 200px 22px 22px;overflow:hidden;box-shadow:0 30px 70px -30px rgba(40,34,50,.5);background:var(--bg-alt);position:relative;z-index:1}
+  .portrait .frame img{width:100%;filter:saturate(1.02)}
+  .portrait .ring{position:absolute;inset:-16px;border:1px solid var(--line);border-radius:210px 210px 32px 32px;z-index:0}
+  .portrait .badge{position:absolute;left:-26px;bottom:34px;z-index:2;background:#fff;border-radius:14px;padding:14px 18px;box-shadow:0 16px 40px -16px rgba(40,34,50,.4);max-width:190px}
+  .portrait .badge strong{font-family:'Cormorant Garamond';font-size:1.15rem;display:block;line-height:1.15}
+  .portrait .badge span{font-size:.72rem;color:var(--muted);letter-spacing:.03em}
+
+  /* ---------- Section framework ---------- */
+  section{position:relative}
+  .sec{padding:104px 0}
+  .sec-head{max-width:640px;margin-bottom:56px}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .sec-head p{color:var(--muted);font-size:1.06rem;margin-top:1rem;margin-bottom:0}
+  .bg-alt{background:var(--bg-alt)}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+  .reveal.in{opacity:1;transform:none}
+  .reveal[data-d="1"]{transition-delay:.08s}
+  .reveal[data-d="2"]{transition-delay:.16s}
+  .reveal[data-d="3"]{transition-delay:.24s}
+
+  /* ---------- Fit / "Wann richtig" ---------- */
+  .pull{font-family:'Cormorant Garamond';font-style:italic;font-size:clamp(1.6rem,3.4vw,2.5rem);line-height:1.32;color:var(--ink);max-width:22ch;margin:0 auto 70px;text-align:center;position:relative}
+  .pull::before{content:"„";font-size:3.4em;color:var(--accent);opacity:.28;position:absolute;left:50%;top:-.55em;transform:translateX(-50%);line-height:1}
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:40px 38px;transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+  .card:hover{transform:translateY(-4px);box-shadow:0 26px 50px -30px rgba(40,34,50,.35)}
+  .card h3{margin-bottom:22px;display:flex;align-items:center;gap:12px}
+  .card h3 .ic{width:34px;height:34px;flex:none;border-radius:9px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center}
+  .ticks{list-style:none;display:grid;gap:15px}
+  .ticks li{position:relative;padding-left:32px;color:var(--ink);font-size:.99rem;line-height:1.6}
+  .ticks li::before{content:"";position:absolute;left:0;top:.42em;width:16px;height:16px;border-radius:50%;background:var(--accent-soft)}
+  .ticks li::after{content:"";position:absolute;left:5px;top:.62em;width:5px;height:8px;border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(40deg)}
+
+  /* ---------- Coaching explainer ---------- */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  .split img{border-radius:var(--radius);box-shadow:0 30px 60px -34px rgba(40,34,50,.5);width:100%;object-fit:cover}
+  .lead-p{font-size:1.16rem;line-height:1.7}
+  .steps{display:grid;gap:0;margin-top:8px}
+  .step{display:grid;grid-template-columns:auto 1fr;gap:24px;padding:26px 0;border-top:1px solid var(--line)}
+  .step:last-child{border-bottom:1px solid var(--line)}
+  .step .n{font-family:'Cormorant Garamond';font-size:1.7rem;color:var(--accent);width:44px;height:44px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;flex:none}
+  .step h4{font-family:'Inter';font-size:1.05rem;font-weight:600;margin-bottom:6px}
+  .step p{color:var(--muted);font-size:.98rem;margin:0}
+
+  /* ---------- Formats (online/outdoor) ---------- */
+  .formats{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+  .fmt{border-radius:var(--radius);overflow:hidden;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+  .fmt:hover{transform:translateY(-4px);box-shadow:0 30px 55px -32px rgba(40,34,50,.4)}
+  .fmt .ph{height:210px;overflow:hidden;position:relative}
+  .fmt .ph img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+  .fmt:hover .ph img{transform:scale(1.05)}
+  .fmt .ph .tag{position:absolute;left:18px;top:18px;background:rgba(255,255,255,.92);backdrop-filter:blur(4px);padding:6px 14px;border-radius:100px;font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+  .fmt .body{padding:32px 32px 36px}
+  .fmt h3{margin-bottom:14px}
+  .fmt p{color:var(--muted);font-size:.98rem;margin-bottom:.9em}
+
+  /* ---------- Focus areas ---------- */
+  .focus-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .who{display:grid;gap:16px}
+  .who .row{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+  .who .row .ic{width:38px;height:38px;flex:none;border-radius:10px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center}
+  .who .row p{margin:0;font-size:.98rem;line-height:1.5}
+  .chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+  .chip{background:var(--accent-soft);color:var(--accent-dark);padding:10px 18px;border-radius:100px;font-size:.9rem;font-weight:500}
+
+  /* ---------- About ---------- */
+  .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+  .quote-leaf{background:var(--accent-soft);border-radius:var(--radius);padding:34px 34px;font-family:'Cormorant Garamond';font-style:italic;font-size:1.3rem;line-height:1.4;color:var(--accent-dark);margin-bottom:30px;position:relative}
+  .cred-block{margin-bottom:34px}
+  .cred-block h4{font-family:'Inter';font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+  .cred{list-style:none;display:grid;gap:11px}
+  .cred li{position:relative;padding-left:22px;font-size:.98rem;color:var(--ink)}
+  .cred li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--accent);opacity:.55}
+  .expect{display:grid;gap:12px;margin-top:6px}
+  .expect .row{display:flex;gap:14px;align-items:center;font-size:.99rem}
+  .expect .row .ic{width:30px;height:30px;flex:none;border-radius:8px;background:var(--accent);color:#fff;display:grid;place-items:center}
+
+  /* ---------- Contact ---------- */
+  .contact{background:var(--dark);color:#EEE9F0}
+  .contact h2{color:#fff}
+  .contact .eyebrow{color:#B9A9C6}
+  .contact .eyebrow::before{background:#B9A9C6}
+  .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:start}
+  .contact-intro p{color:#C7C1CD}
+  .cinfo{display:grid;gap:22px;margin-top:34px}
+  .cinfo a,.cinfo div{display:flex;gap:16px;align-items:flex-start;color:#EEE9F0}
+  .cinfo .ic{width:42px;height:42px;flex:none;border-radius:11px;background:rgba(255,255,255,.08);color:#C7B4D6;display:grid;place-items:center}
+  .cinfo .lbl{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#9B93A5;margin-bottom:2px}
+  .cinfo .val{font-size:1.05rem;color:#fff}
+  .cinfo a:hover .val{color:#C7B4D6}
+  .promise{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+  .promise span{font-size:.8rem;color:#C7C1CD;background:rgba(255,255,255,.06);padding:8px 15px;border-radius:100px}
+
+  form{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:34px}
+  .field{margin-bottom:18px}
+  .field.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  label{display:block;font-size:.78rem;letter-spacing:.06em;color:#B4AEBD;margin-bottom:7px}
+  input,textarea,select{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:13px 15px;color:#fff;font-family:inherit;font-size:.95rem;transition:border-color .2s,background .2s}
+  input:focus,textarea:focus,select:focus{outline:none;border-color:#C7B4D6;background:rgba(255,255,255,.08)}
+  input::placeholder,textarea::placeholder{color:#7F7889}
+  select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23B4AEBD' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center}
+  textarea{resize:vertical;min-height:118px}
+  .submit{width:100%;background:var(--accent);color:#fff;border:0;padding:15px;border-radius:100px;font-family:inherit;font-size:.98rem;font-weight:500;cursor:pointer;transition:background .25s,transform .25s;display:flex;align-items:center;justify-content:center;gap:9px}
+  .submit:hover{background:#7d6a8f;transform:translateY(-2px)}
+  .form-note{font-size:.78rem;color:#9B93A5;margin:14px 0 0;text-align:center}
+
+  /* ---------- Footer / legal ---------- */
+  footer{background:#1B1822;color:#B4AEBD;padding:70px 0 40px}
+  .foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.09)}
+  .foot-brand{font-family:'Cormorant Garamond';font-size:1.5rem;color:#fff;margin-bottom:14px}
+  .foot-top p{font-size:.92rem;color:#8F8A98;max-width:34ch}
+  .foot-col h5{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:#7F7A88;margin-bottom:16px}
+  .foot-col a{display:block;font-size:.93rem;color:#CFCAD6;margin-bottom:11px;transition:color .2s;cursor:pointer}
+  .foot-col a:hover{color:#fff}
+  .legal-accordion{max-width:820px;margin:40px auto 0}
+  details.legal{border-top:1px solid rgba(255,255,255,.09)}
+  details.legal:last-of-type{border-bottom:1px solid rgba(255,255,255,.09)}
+  details.legal summary{list-style:none;cursor:pointer;padding:20px 4px;display:flex;justify-content:space-between;align-items:center;font-family:'Cormorant Garamond';font-size:1.28rem;color:#fff}
+  details.legal summary::-webkit-details-marker{display:none}
+  details.legal summary .plus{width:22px;height:22px;position:relative;flex:none;transition:transform .3s var(--ease)}
+  details.legal summary .plus::before,details.legal summary .plus::after{content:"";position:absolute;background:#C7B4D6;border-radius:2px}
+  details.legal summary .plus::before{left:0;top:10px;width:22px;height:2px}
+  details.legal summary .plus::after{left:10px;top:0;width:2px;height:22px;transition:transform .3s var(--ease)}
+  details.legal[open] summary .plus::after{transform:scaleY(0)}
+  details.legal .legal-body{padding:4px 4px 26px;color:#9B96A3;font-size:.9rem;line-height:1.7}
+  details.legal .legal-body h6{color:#CFCAD6;font-family:'Inter';font-size:.9rem;font-weight:600;margin:16px 0 6px}
+  details.legal .legal-body p{margin-bottom:.8em}
+  details.legal .legal-body ul{margin:0 0 .8em 1.1em}
+  details.legal .legal-body li{margin-bottom:5px}
+  .copyright{text-align:center;font-size:.82rem;color:#6E6A76;margin-top:44px}
+  .copyright a{color:#8F8A98}
+
+  /* ---------- Responsive ---------- */
+  @media(max-width:920px){
+    .hero-grid,.split,.focus-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:44px}
+    .two-col,.formats{grid-template-columns:1fr}
+    .foot-top{grid-template-columns:1fr 1fr}
+    .portrait{order:-1}
+    .hero{padding-top:150px}
+    .split img{order:-1}
+  }
+  @media(max-width:680px){
+    body{font-size:16px}
+    .menu{position:fixed;inset:0 0 0 auto;width:min(300px,82vw);background:var(--bg);flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:6px;padding:96px 32px;transform:translateX(100%);transition:transform .4s var(--ease);box-shadow:-20px 0 60px -30px rgba(0,0,0,.4)}
+    .menu.open{transform:none}
+    .menu a{font-size:1.05rem;padding:8px 0;width:100%}
+    .menu .btn{margin-top:14px}
+    .burger{display:flex;z-index:110}
+    .burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .burger.open span:nth-child(2){opacity:0}
+    .burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+    .sec{padding:76px 0}
+    .field.row2{grid-template-columns:1fr}
+    .foot-top{grid-template-columns:1fr}
+    .portrait .badge{left:0}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header id="top">
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Coaching Schinkovits — Startseite">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none"><path d="M16 6c-1.4 3.2-4.8 4.2-4.8 8.2 0 2.7 2.1 4.6 4.8 4.6s4.8-1.9 4.8-4.6C20.8 10.2 17.4 9.2 16 6z" fill="#fff"/><rect x="15.2" y="18" width="1.6" height="8" rx=".8" fill="#fff"/></svg>
+      </span>
+      <span>coaching&#8209;schinkovits<small>Business Coaching &amp; Training</small></span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#willkommen">Willkommen</a>
+      <a href="#richtig">Sind Sie richtig?</a>
+      <a href="#coaching">Coaching</a>
+      <a href="#formate">Formate</a>
+      <a href="#ueber">Über mich</a>
+      <a href="#kontakt" class="btn">Kontakt</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===== Hero / Willkommen ===== -->
+<section class="hero" id="willkommen">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="reveal in">
+        <p class="hero-quote">„Eine mächtige Flamme entsteht aus einem winzigen Funken."</p>
+        <h1>Suchen Sie sich aus, wer Sie <em>coachen</em> darf.</h1>
+        <p class="lead">Ein herzliches Willkommen. Sie bestimmen, wer auf Ihrem Lebensweg eine gute Orientierung sein darf — und ob ich der richtige Coach für Ihre Entscheidungen bin.</p>
+        <div class="hero-actions">
+          <a href="#kontakt" class="cta cta-primary">Kostenloses Erstgespräch
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#coaching" class="cta cta-ghost">Was ist Coaching?</a>
+        </div>
+      </div>
+      <div class="portrait reveal in" data-d="1">
+        <span class="ring" aria-hidden="true"></span>
+        <div class="frame">
+          <img src="assets/guenter.jpg" alt="Dipl.-Ing. Günter Schinkovits, Business Coach und Trainer" width="300" />
+        </div>
+        <div class="badge">
+          <strong>Dipl.-Ing. Günter Schinkovits</strong>
+          <span>Business Coach &amp; Trainer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Wann sind Sie bei mir richtig ===== -->
+<section class="sec bg-alt" id="richtig">
+  <div class="wrap">
+    <p class="pull reveal">Wenn man in die falsche Richtung läuft, hat es keinen Zweck, das Tempo zu erhöhen.</p>
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Wann sind Sie bei mir richtig?</span>
+      <h2>Klarheit schaffen — gemeinsam</h2>
+      <p>Ich erarbeite gemeinsam mit Ihnen Lösungen für Ihre Themenstellungen. Bei meinen Coachingsitzungen stehen stets <em>Ihre Ziele im Mittelpunkt</em>.</p>
+    </div>
+    <div class="two-col">
+      <div class="card reveal">
+        <h3><span class="ic" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M10 11a3 3 0 100-6 3 3 0 000 6z" stroke="currentColor" stroke-width="1.5"/><path d="M4 16c0-2.2 2.7-3.5 6-3.5s6 1.3 6 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </span>Sie sind hier richtig, wenn …</h3>
+        <ul class="ticks">
+          <li>Sie eine personalverantwortliche Führungskraft sind und die Förderung Ihrer Mitarbeiterinnen und Mitarbeiter Ihnen ein wichtiges Anliegen ist.</li>
+          <li>Sie eine Führungskraft oder eine angehende Führungskraft sind.</li>
+          <li>Sie als Mitarbeiterin oder Mitarbeiter in einem Unternehmen Klarheiten schaffen wollen.</li>
+          <li>Sie im öffentlichen Dienst bedienstet sind und meine Erfahrungen brauchen können.</li>
+        </ul>
+      </div>
+      <div class="card reveal" data-d="1">
+        <h3><span class="ic" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M10 2l2.2 5.6L18 8l-4.4 3.6L15 18l-5-3.3L5 18l1.4-6.4L2 8l5.8-.4L10 2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        </span>Das erhalten Sie von mir</h3>
+        <ul class="ticks">
+          <li>Einen Coach mit vielfältigen Erfahrungen aus der Arbeitswelt.</li>
+          <li>Einen Experten im ArbeitnehmerInnenschutz und in der betrieblichen Gesundheitsförderung.</li>
+          <li>Einen Coach und Trainer, der sich durch Fortbildungen ständig weiterentwickelt.</li>
+          <li>Langjährige Erfahrung als Vortragender bei Veranstaltungen und Kongressen — nutzbar für Ihren beruflichen Alltag.</li>
+          <li>Aktuelle Interventionsmethoden und zeitgemäße Managementtechniken.</li>
+          <li>Ein Lächeln und positive Energie, die Coachinggespräche erleichtern.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Was ist Coaching + Ablauf ===== -->
+<section class="sec" id="coaching">
+  <div class="wrap">
+    <div class="split" style="margin-bottom:96px">
+      <div class="reveal">
+        <span class="eyebrow">Angebot — Was ist Coaching?</span>
+        <h2 style="margin-bottom:24px">… Ihre Lösungen finden.</h2>
+        <p class="lead-p">Coaching ist eine anlassbezogene „persönliche Unterstützung" — ein spezielles Beratungsangebot für Menschen in Klärungs-, Neuorientierungs- und Veränderungsprozessen, wobei Systemzusammenhänge beachtet und aktiv genützt werden.</p>
+        <p>Das Coaching zielt darauf ab, Sie zu unterstützen und anzuleiten, Ihre Ziele bzw. die gewünschten Zustände zu erreichen. Die Blickrichtung ist zukunfts- und lösungsorientiert. Ihre persönlichen Ressourcen werden genutzt und in einem wesentlichen Anteil verstärkt.</p>
+        <p>Gezielte Fragen helfen Ihnen weiter und begleiten Sie durch den Prozess der Veränderung. Es wird Ihnen bewusst, welche Lösungsoptionen Ihnen zur Verfügung stehen — und Sie erkennen die Verbesserung Ihrer persönlichen Lebensqualität.</p>
+      </div>
+      <div class="reveal" data-d="1">
+        <img src="assets/img-3-3.jpg" alt="Persönliches Coachinggespräch am Tisch" loading="lazy" />
+      </div>
+    </div>
+
+    <div class="sec-head reveal">
+      <span class="eyebrow">Ablauf einer Coachingsitzung</span>
+      <h2>So arbeiten wir zusammen</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="n">1</span>
+        <div>
+          <h4>Kostenloses Erstgespräch — ca. 20 Minuten</h4>
+          <p>Sie erläutern Ihr Anliegen oder Ihr Thema. Sie erhalten Informationen über den weiteren Ablauf, und ich schlage Ihnen eine passende Methode für die nächsten Schritte vor. Alle Gespräche und Dokumentationen werden mit höchster Vertraulichkeit behandelt.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <span class="n">2</span>
+        <div>
+          <h4>Ihre Entscheidung</h4>
+          <p>Auf Wunsch erhalten Sie die Dokumentation übermittelt. So können Sie weitere Lösungsschritte setzen und Ihre Erfolge bewusster erleben. Nach dem Erstgespräch entscheiden Sie, ob ich Sie als Coach begleiten darf.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <span class="n">3</span>
+        <div>
+          <h4>Coachingsitzungen mit klaren Zielen</h4>
+          <p>In den weiteren Sitzungen arbeiten wir gemeinsam an klar definierten Sitzungszielen. Diese Zielerreichung und die Verbesserung Ihrer persönlichen Situation sind wichtige Meilensteine.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <span class="n">4</span>
+        <div>
+          <h4>Reflexion & Wirksamkeit</h4>
+          <p>Zwischen den Sitzungen reflektieren Sie verschiedene Situationen und erkennen anhand von Erfolgen schnell die Wirksamkeit des Coachings.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Formate: Online & Outdoor ===== -->
+<section class="sec bg-alt" id="formate">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Coachingformate</span>
+      <h2>Coaching, wo es für Sie passt</h2>
+      <p>Neben dem persönlichen Gespräch begleite ich Sie auch per Videokonferenz oder mitten in der Natur.</p>
+    </div>
+    <div class="formats">
+      <article class="fmt reveal">
+        <div class="ph"><span class="tag">Onlinecoaching</span><img src="assets/img-3-1.jpg" alt="Onlinecoaching per Videokonferenz am Schreibtisch" loading="lazy" /></div>
+        <div class="body">
+          <h3>Onlinecoaching</h3>
+          <p>Oft ist die Zeit für An- und Rückfahrt sowie eine Terminfindung knapp — dann ist Coaching per Videokonferenz eine gute Lösung. Sie sparen lange Anfahrtswege und besprechen Ihre Themen in gewohnter Umgebung.</p>
+          <p>Ortsunabhängig und leicht in Ihren Berufsalltag integrierbar. Die Vertraulichkeit über die Gesprächsinhalte ist selbstverständlich. Nach einem unverbindlichen telefonischen Erstgespräch vereinbaren wir rasch einen Termin.</p>
+        </div>
+      </article>
+      <article class="fmt reveal" data-d="1">
+        <div class="ph"><span class="tag">Outdoorcoaching</span>
+          <img src="assets/img-3-1.jpg" alt="Coaching in der Natur" loading="lazy" style="filter:hue-rotate(28deg) saturate(1.15) brightness(1.02)" />
+        </div>
+        <div class="body">
+          <h3>Outdoorcoaching — Coaching in der Natur</h3>
+          <p>Kennen Sie Momente in der Natur, in denen Sie die besten Ideen finden, berufliche und private Gedanken „säubern", auf einmal mehr riechen, sehen und hören — und Entspannung bewusst genießen?</p>
+          <p>Mein „Coaching in der Natur" nützt diese Energien, um Ihre Wahrnehmung zu schärfen und neue Prioritäten zu setzen. Bei einem telefonischen Erstgespräch biete ich Ihnen ein zu Ihrem Thema passendes Umfeld an — mit intensiven, nachhaltigen Ergebnissen.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Arbeitsschwerpunkte ===== -->
+<section class="sec" id="schwerpunkte">
+  <div class="wrap">
+    <div class="focus-grid">
+      <div class="reveal">
+        <span class="eyebrow">Arbeitsschwerpunkte</span>
+        <h2 style="margin-bottom:26px">Für wen ich arbeite</h2>
+        <div class="who">
+          <div class="row"><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M10 10a3 3 0 100-6 3 3 0 000 6z" stroke="currentColor" stroke-width="1.5"/><path d="M4 17c0-2.5 2.7-4 6-4s6 1.5 6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span><p>Coaching von Führungskräften</p></div>
+          <div class="row"><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M10 3l6 3v4c0 3.5-2.5 6-6 7-3.5-1-6-3.5-6-7V6l6-3z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span><p>Coaching von Mitarbeiterinnen und Mitarbeitern mit zukünftigen Führungsaufgaben</p></div>
+          <div class="row"><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M3 17V9l7-5 7 5v8" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M8 17v-4h4v4" stroke="currentColor" stroke-width="1.4"/></svg></span><p>Coaching von Mitarbeiterinnen und Mitarbeitern im öffentlichen Dienst</p></div>
+        </div>
+      </div>
+      <div class="reveal" data-d="1">
+        <h3 style="margin-bottom:8px">Thematische Bereiche <span style="color:var(--muted);font-family:'Inter';font-size:.9rem;font-weight:400">(Auszug)</span></h3>
+        <div class="chips">
+          <span class="chip">Führungsthemen</span>
+          <span class="chip">Betriebliche Kommunikation</span>
+          <span class="chip">Konfliktlösung</span>
+          <span class="chip">Zeitmanagement</span>
+          <span class="chip">Selbstmanagement</span>
+          <span class="chip">Persönliche Arbeitsorganisation</span>
+          <span class="chip">Umgang mit Arbeitsverdichtung</span>
+          <span class="chip">Knappheit an Arbeitsressourcen</span>
+        </div>
+        <div class="quote-leaf" style="margin-top:34px">
+          Ginkgobäume vereinigen Widerstandskraft und Anpassungsfähigkeit — und fördern das Zusammenspiel von Gefühl und Intellekt.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Über Günter Schinkovits ===== -->
+<section class="sec bg-alt" id="ueber">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Über Günter Schinkovits</span>
+      <h2>Erfahrung, die Sie nutzen können</h2>
+    </div>
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="cred-block">
+          <h4>Beruflicher Werdegang</h4>
+          <ul class="cred">
+            <li>HTL für Maschinenbau</li>
+            <li>Studium Maschinenbau, Technische Universität Wien</li>
+            <li>Langjährige Führungskraft im öffentlichen Dienst</li>
+            <li>Lektor an der FH Pinkafeld — Gesundheitsmanagement & Gesundheitsförderung</li>
+            <li>Vortragender bei nationalen und internationalen Veranstaltungen</li>
+            <li>Business Coach und Trainer</li>
+            <li>Gewerbeberechtigung: Unternehmensberatung inkl. Unternehmensorganisation</li>
+          </ul>
+        </div>
+        <div class="expect">
+          <div class="row"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7.5" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Begeisterung und Neugier für Menschen</div>
+          <div class="row"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7.5" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Ressourcen- und Lösungsorientierung</div>
+          <div class="row"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7.5" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Anstoß für neue Ideen</div>
+          <div class="row"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7.5" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Klarheit, Kraft und Energie nach dem Coaching</div>
+        </div>
+      </div>
+      <div class="reveal" data-d="1">
+        <div class="cred-block">
+          <h4>Fachliche Ausbildungen (Auszug)</h4>
+          <ul class="cred">
+            <li>Zertifizierter systemischer Business Coach</li>
+            <li>Umgang mit berufsbedingten psychischen Belastungen</li>
+            <li>Konfliktmanagement</li>
+            <li>Moderationstechniken</li>
+            <li>Pädagogische Trainingsseminare und Präsentationstechniken</li>
+            <li>Teamentwicklung</li>
+            <li>Gender Mainstreaming</li>
+            <li>Stress- und Zeitmanagement / Persönliche Arbeitsorganisation</li>
+            <li>Selbstmanagement</li>
+            <li>Positive Psychologie</li>
+          </ul>
+        </div>
+        <p style="color:var(--muted)">Als Business Coach setzt Günter Schinkovits verschiedene Managementmethoden ein, um <em>hohe Kundenzufriedenheit und Kundenmotivation sowie punktgenaue Erweiterungen von Lösungsoptionen</em> zu erreichen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Kontakt ===== -->
+<section class="sec contact" id="kontakt">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-intro reveal">
+        <span class="eyebrow">Kontakt</span>
+        <h2 style="margin-bottom:22px">Der richtige Zeitpunkt ist jetzt</h2>
+        <p>Professionelle Hilfe und Unterstützung zur richtigen Zeit ist ein wichtiges Angebot für meine Kunden. Verwenden Sie das Kontaktformular oder rufen Sie mich an.</p>
+        <div class="promise">
+          <span>✓ Rascher Termin</span>
+          <span>✓ Langjähriges Betreuungsangebot</span>
+          <span>✓ Qualitätsvolle Kundenbetreuung</span>
+        </div>
+        <div class="cinfo">
+          <a href="tel:+4367762564995">
+            <span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 3h3l1.5 4-2 1.5a10 10 0 005 5l1.5-2 4 1.5v3a1 1 0 01-1 1A14 14 0 013 4a1 1 0 011-1z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+            <span><span class="lbl">Telefon</span><span class="val">+43 6776 2564995</span></span>
+          </a>
+          <div>
+            <span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 11a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" stroke="currentColor" stroke-width="1.4"/><path d="M10 18c4-3.5 6-6.4 6-9.2A6 6 0 004 8.8C4 11.6 6 14.5 10 18z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+            <span><span class="lbl">Adresse</span><span class="val">Gartengasse 24, 7011 Siegendorf, Österreich</span></span>
+          </div>
+        </div>
+      </div>
+
+      <form class="reveal" data-d="1" action="#" method="post" onsubmit="return handleContact(event)">
+        <div class="field">
+          <label for="anrede">Anrede</label>
+          <select id="anrede" name="anrede">
+            <option>Frau</option>
+            <option>Herr</option>
+            <option>Divers</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="name">Vollständiger Name</label>
+          <input id="name" name="name" type="text" placeholder="Ihr Name" required />
+        </div>
+        <div class="field row2">
+          <div>
+            <label for="email">E-Mail</label>
+            <input id="email" name="email" type="email" placeholder="name@beispiel.at" required />
+          </div>
+          <div>
+            <label for="tel">Telefon</label>
+            <input id="tel" name="tel" type="tel" placeholder="Optional" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="betreff">Betreff</label>
+          <input id="betreff" name="betreff" type="text" placeholder="Worum geht es?" />
+        </div>
+        <div class="field">
+          <label for="nachricht">Nachricht</label>
+          <textarea id="nachricht" name="nachricht" placeholder="Ihre Nachricht …" required></textarea>
+        </div>
+        <button class="submit" type="submit">Nachricht senden
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h11M9 4l4 4-4 4" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <p class="form-note">Ihre Angaben werden vertraulich behandelt (siehe Datenschutzerklärung).</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer id="rechtliches">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">coaching&#8209;schinkovits</div>
+        <p>Business Coaching und Training mit Dipl.-Ing. Günter Schinkovits. Lösungsorientiert, vertraulich und persönlich — in Siegendorf, online und in der Natur.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Navigation</h5>
+        <a href="#willkommen">Willkommen</a>
+        <a href="#richtig">Wann Sie richtig sind</a>
+        <a href="#coaching">Was ist Coaching?</a>
+        <a href="#formate">Online- & Outdoorcoaching</a>
+        <a href="#ueber">Über mich</a>
+      </div>
+      <div class="foot-col">
+        <h5>Kontakt</h5>
+        <a href="tel:+4367762564995">+43 6776 2564995</a>
+        <a href="#kontakt">Kontaktformular</a>
+        <span style="display:block;font-size:.93rem;color:#8F8A98;line-height:1.6">Gartengasse 24<br/>7011 Siegendorf<br/>Österreich</span>
+      </div>
+    </div>
+
+    <div class="legal-accordion">
+      <details class="legal" id="impressum">
+        <summary>Impressum<span class="plus" aria-hidden="true"></span></summary>
+        <div class="legal-body">
+          <p><strong style="color:#fff">Dipl.-Ing. Günter Schinkovits</strong><br/>Gartengasse 24, 7011 Siegendorf<br/>www.coaching-schinkovits.at</p>
+          <h6>Mitgliedschaft</h6>
+          <p>Mitglied der WKÖ (Wirtschaftskammer Österreich) und der Wirtschaftskammer Burgenland, Fachgruppe „Information und Consulting", Gewerbe „Unternehmensberatung einschließlich der Unternehmensorganisation" gemäß Gewerbeordnung.</p>
+          <h6>Aufsichtsbehörde</h6>
+          <p>Bezirkshauptmannschaft Eisenstadt-Umgebung.</p>
+          <p style="margin-top:14px;color:#6E6A76">Copyright ©2020 coaching-schinkovits. Alle Rechte vorbehalten.</p>
+        </div>
+      </details>
+
+      <details class="legal" id="agb">
+        <summary>Allgemeine Geschäftsbedingungen<span class="plus" aria-hidden="true"></span></summary>
+        <div class="legal-body">
+          <p>Mit dem Fixieren eines Termins bei Dipl.-Ing. Günter Schinkovits gelten die nachfolgenden Allgemeinen Geschäftsbedingungen als angenommen.</p>
+          <ul>
+            <li>Die geistigen Inhalte bleiben Eigentum des Coachs und dürfen nur im Rahmen des Auftrags genutzt werden.</li>
+            <li>Für Sitzungen außerhalb von Siegendorf wird Kilometergeld berechnet.</li>
+            <li>Eine kostenlose Stornierung ist bis 48 Stunden vor dem Termin möglich, danach wird die volle Gebühr fällig.</li>
+            <li>Prepaid-Leistungen verfallen nach zwei Jahren.</li>
+            <li>Eine Coachingeinheit dauert 50 Minuten. Das Erstgespräch (ca. 20 Minuten) ist kostenlos.</li>
+            <li>Video- und Audiomitschnitte sind ohne Genehmigung des Coachs untersagt.</li>
+            <li>Strikte Verschwiegenheit aller Beteiligten ist erforderlich.</li>
+            <li>Der Coach übernimmt keine Haftung für die Ergebnisse des Kunden.</li>
+          </ul>
+          <p>Es gilt österreichisches Recht; Gerichtsstand ist das Bezirksgericht Eisenstadt.</p>
+        </div>
+      </details>
+
+      <details class="legal" id="datenschutz">
+        <summary>Datenschutzerklärung<span class="plus" aria-hidden="true"></span></summary>
+        <div class="legal-body">
+          <p><strong style="color:#fff">Der Schutz Ihrer persönlichen Daten ist mir ein besonderes Anliegen.</strong> Die Datenverarbeitung erfolgt gemäß DSGVO und TKG 2003.</p>
+          <h6>Kontakt mit mir</h6>
+          <p>Wenn Sie per Formular auf der Website oder per E-Mail Kontakt mit mir aufnehmen, werden Ihre angegebenen Daten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen sechs Monate gespeichert. Eine Weitergabe erfolgt nur mit Ihrer Einwilligung.</p>
+          <h6>Cookies</h6>
+          <p>Diese Website verwendet Cookies — kleine Textdateien, die mit Hilfe des Browsers auf Ihrem Endgerät abgelegt werden. Sie können Ihre Browsereinstellungen anpassen, um Cookies zu kontrollieren.</p>
+          <h6>Web-Analyse</h6>
+          <p>Es wird Google Analytics mit pseudonymisierten Daten verwendet. Die Nutzerdaten werden für die Dauer von sechs Monaten aufbewahrt. Rechtsgrundlage: § 96 Abs 3 TKG sowie Art 6 Abs 1 DSGVO.</p>
+          <h6>Ihre Rechte</h6>
+          <p>Sie haben Anspruch auf Auskunft, Berichtigung, Löschung, Einschränkung und Datenübertragbarkeit sowie auf Widerruf und Widerspruch. Kontakt: +43 6776 2564995.</p>
+        </div>
+      </details>
+    </div>
+
+    <p class="copyright">© <span id="year">2020</span> coaching-schinkovits · Dipl.-Ing. Günter Schinkovits · Alle Rechte vorbehalten</p>
+  </div>
+</footer>
+
+<script>
+  // sticky header
+  const header = document.getElementById('top');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 24);
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  // mobile menu
+  const burger = document.getElementById('burger');
+  const menu = document.getElementById('menu');
+  burger.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open);
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    menu.classList.remove('open'); burger.classList.remove('open'); burger.setAttribute('aria-expanded','false');
+  }));
+
+  // scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:0.14, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal:not(.in)').forEach(el => io.observe(el));
+
+  // year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // contact form — no backend yet: opens the visitor's mail app as a safe fallback.
+  function handleContact(e){
+    e.preventDefault();
+    const f = e.target;
+    const subject = encodeURIComponent('[Website] ' + (f.betreff.value || 'Coaching-Anfrage'));
+    const body = encodeURIComponent(
+      f.anrede.value + ' ' + f.name.value + '\n' +
+      'E-Mail: ' + f.email.value + '\n' +
+      'Telefon: ' + (f.tel.value || '-') + '\n\n' +
+      f.nachricht.value
+    );
+    // TODO: Echte E-Mail-Adresse eintragen oder Formular-Dienst (z. B. Formspree) verbinden.
+    window.location.href = 'mailto:?subject=' + subject + '&body=' + body;
+    return false;
+  }
+</script>
+</body>
+</html>

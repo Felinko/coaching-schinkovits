@@ -1,0 +1,9 @@
+{
+  "pid": 81860,
+  "port": 37321,
+  "token": "548a6dff-b54d-49c5-ad72-73d4e6ede515",
+  "startedAt": "2026-07-03T09:12:09.455Z",
+  "serverPath": "/Users/felix/.claude/skills/gstack/browse/src/server.ts",
+  "mode": "launched",
+  "configHash": "303a7eeccc03078b"
+}
